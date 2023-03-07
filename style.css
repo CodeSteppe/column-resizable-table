@@ -1,6 +1,7 @@
 table {
   border-collapse: collapse;
   width: 100%;
+  font-size: 1.3rem;
 }
 
 th,
@@ -9,8 +10,7 @@ td {
   padding: 8px;
 }
 
-th:nth-child(1),
-th:nth-child(2) {
+th:not(:last-child) {
   resize: horizontal;
   overflow: auto;
 }
