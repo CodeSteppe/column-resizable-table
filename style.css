@@ -1,7 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+}
+
 table {
-  border-collapse: collapse;
-  width: 100%;
+  /* border-collapse: collapse; */
+  width: 80%;
   font-size: 1.5rem;
+  border-spacing: 8px;
 }
 
 th,
@@ -10,11 +24,32 @@ td {
   padding: 40px 20px;
 }
 
+th {
+  padding: 40px 20px;
+  background-color: rgb(255, 255, 255);
+}
+
 th:not(:last-child) {
   resize: horizontal;
   overflow: auto;
 }
 
+tbody tr:nth-child(even) {
+  background-color: rgb(220, 254, 255);
+}
 tbody tr:nth-child(odd) {
-  background-color: #f2f2f2;
+  background-color: rgb(238, 255, 226);
+}
+
+#title,ion-icon {
+  color: rgb(0, 183, 255);
+  font-size: 128px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+ion-icon {
+}
+
+#title span {
+  /* margin-top: -20px; */
 }
